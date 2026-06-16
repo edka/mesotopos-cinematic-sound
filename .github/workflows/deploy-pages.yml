@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -30,8 +30,18 @@ jobs:
       - name: Build
         run: bun run build
 
-      - name: Add CNAME
-        run: cp CNAME dist/client/CNAME
+      - name: Prepare static output
+        run: |
+          test -f dist/client/index.html
+          cp CNAME dist/client/CNAME
+          touch dist/client/.nojekyll
+
+      - name: Publish to gh-pages branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist/client
+          cname: mesotoposmusic.com
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
