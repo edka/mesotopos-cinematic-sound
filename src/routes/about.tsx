@@ -6,13 +6,13 @@ import glyphs from "@/assets/glyphs.png.asset.json";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — Mesotopos" },
+      { title: "About | Mesotopos" },
       {
         name: "description",
         content:
-          "Mesotopos is a 10-track musical project by Ed Kabatsky (neomatik), Rashid Akmanov, and Oleg Ignatenko — a middle place where heritage and modernity meet.",
+          "Mesotopos is a 10-track musical project by Ed Kabatsky, Rashid Akmanov, and Oleg Ignatenko, a middle place where heritage and modernity meet.",
       },
-      { property: "og:title", content: "About — Mesotopos" },
+      { property: "og:title", content: "About | Mesotopos" },
       {
         property: "og:description",
         content: "A middle place. A zone of overlap where histories, identities, and futures meet.",
@@ -28,7 +28,7 @@ function AboutPage() {
       <PageHeading
         eyebrow="About the project"
         title="A middle place."
-        lede="Mesotopos is a new musical project by Ed Kabatsky — also known as neomatik — together with Rashid Akmanov and Oleg Ignatenko."
+        lede="Mesotopos is a new musical project by Ed Kabatsky, together with Rashid Akmanov and Oleg Ignatenko."
       />
 
       <section className="px-6 lg:px-10 pb-32">
@@ -70,7 +70,7 @@ function AboutPage() {
 
             <Reveal delay={0.1}>
               <blockquote className="my-16 border-l-2 border-bronze pl-8 font-display italic text-3xl md:text-4xl leading-tight text-sand">
-                A middle place — a zone of overlap where histories, identities,
+                A middle place, a zone of overlap where histories, identities,
                 and futures meet.
               </blockquote>
             </Reveal>
@@ -89,7 +89,7 @@ function AboutPage() {
                 arrives June 26, followed by{" "}
                 <em className="text-sand not-italic font-medium">P38</em> on
                 July 17. More than a release schedule, this is a slow unveiling
-                of a larger world — one track at a time.
+                of a larger world, one track at a time.
               </p>
             </Reveal>
 
@@ -105,7 +105,7 @@ function AboutPage() {
                 </p>
                 <div className="mt-8 flex flex-wrap gap-4">
                   <a
-                    href="mailto:mesotopos@neomatik.com?subject=Mesotopos%20%E2%80%94%20Film%20collaboration"
+                    href="mailto:mesotopos@neomatik.com?subject=Mesotopos%20-%20Film%20collaboration"
                     className="inline-flex items-center bg-sand text-background px-7 py-3 text-xs uppercase tracking-[0.3em] hover:bg-bronze transition-colors"
                   >
                     Reach out
