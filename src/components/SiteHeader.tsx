@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import wordmark from "@/assets/mesotopos-purple-transparent.png.asset.json";
+import wordmark from "@/assets/mesotopos-wh-trnsp.png.asset.json";
 
 const NAV = [
   { to: "/", label: "Home" },
