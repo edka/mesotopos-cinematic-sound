@@ -20,7 +20,7 @@ const SCENES: Scene[] = [
     date: "June 26",
     status: "Out now",
     caption:
-      "A slow opening sequence — quiet tension, threshold light, the sense that something larger is about to move.",
+      "A slow opening sequence: quiet tension, threshold light, the sense that something larger is about to move.",
     cover: mellow.url,
     links: [
       { label: "Spotify", href: "#" },
@@ -34,7 +34,7 @@ const SCENES: Scene[] = [
     date: "July 17",
     status: "Upcoming",
     caption:
-      "A turn into harder ground. Mechanical pulse against weathered stone — heritage running into the present.",
+      "A turn into harder ground. Mechanical pulse against weathered stone, heritage running into the present.",
   },
   {
     number: "03",
@@ -42,20 +42,20 @@ const SCENES: Scene[] = [
     date: "TBA",
     status: "In the cycle",
     caption:
-      "A study in two voices held in the same room — opposites refusing to resolve.",
+      "A study in two voices held in the same room, opposites refusing to resolve.",
   },
 ];
 
 export const Route = createFileRoute("/music")({
   head: () => ({
     meta: [
-      { title: "Music — Mesotopos" },
+      { title: "Music | Mesotopos" },
       {
         name: "description",
         content:
           "Scenes from Mesotopos: Mellow November, P38, Poor & Rich. A 10-track cycle released one scene at a time.",
       },
-      { property: "og:title", content: "Music — Mesotopos" },
+      { property: "og:title", content: "Music | Mesotopos" },
       { property: "og:description", content: "Ten scenes. One soundtrack. Released gradually." },
       { property: "og:image", content: mellow.url },
     ],
@@ -81,7 +81,7 @@ function MusicPage() {
                   i % 2 ? "lg:[&>*:first-child]:order-2" : ""
                 }`}
               >
-                <div className="relative aspect-[4/5] border border-border/60 overflow-hidden bg-card">
+                <div className="relative aspect-square border border-border/60 overflow-hidden bg-card">
                   {scene.cover ? (
                     <img
                       src={scene.cover}
