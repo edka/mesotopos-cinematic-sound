@@ -6,13 +6,13 @@ import { Reveal } from "@/components/Reveal";
 export const Route = createFileRoute("/book")({
   head: () => ({
     meta: [
-      { title: "Book Us — Mesotopos" },
+      { title: "Book Us | Mesotopos" },
       {
         name: "description",
         content:
           "Booking inquiries for festivals, venues, curators, promoters and art spaces.",
       },
-      { property: "og:title", content: "Book Us — Mesotopos" },
+      { property: "og:title", content: "Book Us | Mesotopos" },
       { property: "og:description", content: "Invite Mesotopos into your space." },
     ],
   }),
@@ -33,7 +33,7 @@ function BookPage() {
     const details = String(f.get("event") || "");
     const message = String(f.get("message") || "");
 
-    const subject = `Booking inquiry — ${org || name}`;
+    const subject = `Booking inquiry: ${org || name}`;
     const body = [
       `Name: ${name}`,
       `Email: ${email}`,
@@ -57,7 +57,7 @@ function BookPage() {
       <PageHeading
         eyebrow="Book us"
         title="Invite Mesotopos."
-        lede="Festivals, venues, promoters, curators, art spaces — Mesotopos is open to thoughtfully programmed live invitations and collaborations."
+        lede="Festivals, venues, promoters, curators, art spaces. Mesotopos is open to thoughtfully programmed live invitations and collaborations."
       />
 
       <section className="px-6 lg:px-10 pb-32">
@@ -87,10 +87,10 @@ function BookPage() {
               <div>
                 <p className="eyebrow">We're open to</p>
                 <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
-                  <li>— Festivals & curated programs</li>
-                  <li>— Site-specific performances</li>
-                  <li>— Listening events with film collaborators</li>
-                  <li>— Press, podcast and interview requests</li>
+                  <li>Festivals & curated programs</li>
+                  <li>Site-specific performances</li>
+                  <li>Listening events with film collaborators</li>
+                  <li>Press, podcast and interview requests</li>
                 </ul>
               </div>
             </div>
@@ -137,7 +137,7 @@ function BookPage() {
 
               {sent && (
                 <p className="text-xs text-bronze uppercase tracking-[0.25em]">
-                  Email client opened — thank you.
+                  Email client opened. Thank you.
                 </p>
               )}
             </form>

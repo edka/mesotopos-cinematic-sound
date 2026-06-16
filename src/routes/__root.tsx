@@ -77,11 +77,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Mesotopos — A soundtrack for a movie that doesn't exist yet" },
+      { title: "Mesotopos | A soundtrack for a movie that doesn't exist yet" },
       {
         name: "description",
         content:
-          "Mesotopos is a 10-track musical project by Ed Kabatsky (neomatik), Rashid Akmanov, and Oleg Ignatenko — a soundtrack for a film not yet made.",
+          "Mesotopos is a 10-track musical project by Ed Kabatsky (neomatik), Rashid Akmanov, and Oleg Ignatenko, a soundtrack for a film not yet made.",
       },
       { name: "author", content: "Mesotopos" },
       { property: "og:type", content: "website" },

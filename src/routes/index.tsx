@@ -13,7 +13,7 @@ import { Orion } from "@/components/Orion";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Mesotopos — A soundtrack for a movie that doesn't exist yet" },
+      { title: "Mesotopos | A soundtrack for a movie that doesn't exist yet" },
       {
         name: "description",
         content:
@@ -99,14 +99,14 @@ function HomePage() {
           </Reveal>
           <Reveal delay={0.08}>
             <p className="mt-8 font-display text-3xl md:text-4xl leading-[1.35] text-foreground">
-              It begins at a threshold — the moment when one life is ending,
+              It begins at a threshold, the moment when one life is ending,
               another is forming, and the way forward is not yet fully visible.
             </p>
           </Reveal>
           <Reveal delay={0.18}>
             <p className="mt-8 text-base text-muted-foreground leading-relaxed">
               Mesotopos unfolds like a soundtrack for a film that has not been
-              made yet. Each release opens another scene — another fragment of a
+              made yet. Each release opens another scene, another fragment of a
               world shaped first through sound, then offered outward in search
               of the right independent director to bring its visual language to
               life.
@@ -119,7 +119,7 @@ function HomePage() {
       <section className="relative py-20 lg:py-28 px-6 lg:px-10">
         <div className="mx-auto max-w-6xl grid lg:grid-cols-[1fr_1.2fr] gap-12 items-center">
           <Reveal>
-            <div className="relative aspect-[3/4] overflow-hidden border border-border/60">
+            <div className="relative aspect-square overflow-hidden border border-border/60">
               <img
                 src={mellow.url}
                 alt="Mellow November"
@@ -130,10 +130,10 @@ function HomePage() {
           </Reveal>
           <Reveal delay={0.15}>
             <div>
-              <p className="eyebrow">Scene 01 — Out now</p>
+              <p className="eyebrow">Scene 01 · Out now</p>
               <h2 className="mt-6 text-5xl md:text-6xl text-foreground">Mellow November</h2>
               <p className="mt-6 text-muted-foreground leading-relaxed max-w-lg">
-                The first scene of Mesotopos. A slow opening sequence — quiet
+                The first scene of Mesotopos. A slow opening sequence: quiet
                 tension, threshold light, the sense that something larger is
                 about to move.
               </p>

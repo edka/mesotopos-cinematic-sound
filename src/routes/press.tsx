@@ -10,7 +10,7 @@ import wordmarkPurple from "@/assets/wordmark-purple.png.asset.json";
 
 const QUOTES = [
   {
-    text: "A patient, cinematic work — the kind of record that asks you to slow down and listen for the room around it.",
+    text: "A patient, cinematic work, the kind of record that asks you to slow down and listen for the room around it.",
     source: "Press · forthcoming",
   },
   {
@@ -20,20 +20,20 @@ const QUOTES = [
 ];
 
 const DOWNLOADS = [
-  { label: "EPK (PDF)", note: "Bio, photos, contact — forthcoming" },
-  { label: "Hi-res press photos", note: "ZIP archive — forthcoming" },
-  { label: "Logo pack", note: "PNG · SVG variants — forthcoming" },
+  { label: "EPK (PDF)", note: "Bio, photos, contact, forthcoming" },
+  { label: "Hi-res press photos", note: "ZIP archive, forthcoming" },
+  { label: "Logo pack", note: "PNG · SVG variants, forthcoming" },
 ];
 
 export const Route = createFileRoute("/press")({
   head: () => ({
     meta: [
-      { title: "Press Kit — Mesotopos" },
+      { title: "Press Kit | Mesotopos" },
       {
         name: "description",
         content: "Bio, photography, quotes and downloadable assets for press and curators.",
       },
-      { property: "og:title", content: "Press Kit — Mesotopos" },
+      { property: "og:title", content: "Press Kit | Mesotopos" },
       { property: "og:description", content: "Words, images, downloadable assets." },
       { property: "og:image", content: mellow.url },
     ],
@@ -58,7 +58,7 @@ function PressPage() {
               <p className="eyebrow">Short bio</p>
               <p className="text-lg leading-[1.8] text-foreground/85 max-w-3xl">
                 Mesotopos is a new musical project by Ed Kabatsky (neomatik),
-                Rashid Akmanov, and Oleg Ignatenko — a 10-track cycle released
+                Rashid Akmanov, and Oleg Ignatenko, a 10-track cycle released
                 gradually as the soundtrack for a film not yet made.
               </p>
             </div>
@@ -72,7 +72,7 @@ function PressPage() {
               <p className="eyebrow">Long description</p>
               <div className="space-y-6 text-base leading-[1.85] text-foreground/80 max-w-3xl">
                 <p>
-                  Mesotopos begins at a threshold — the moment when one life is
+                  Mesotopos begins at a threshold, the moment when one life is
                   ending, another is forming, and the way forward is not yet
                   fully visible. Built as a 10-track cycle, it unfolds like a
                   soundtrack for a film that has not been made yet.
@@ -87,7 +87,7 @@ function PressPage() {
                 <p>
                   The first scene, "Mellow November," arrives June 26, followed
                   by "P38" on July 17. More than a release schedule, this is a
-                  slow unveiling of a larger world — one track at a time.
+                  slow unveiling of a larger world, one track at a time.
                 </p>
               </div>
             </div>
@@ -109,7 +109,7 @@ function PressPage() {
                       "{q.text}"
                     </p>
                     <footer className="mt-6 text-xs uppercase tracking-[0.3em] text-bronze">
-                      — {q.source}
+                      {q.source}
                     </footer>
                   </blockquote>
                 ))}
@@ -204,7 +204,7 @@ function PressPage() {
             <div className="border border-border/60 p-10 text-center">
               <p className="eyebrow">Press contact</p>
               <a
-                href="mailto:mesotopos@neomatik.com?subject=Mesotopos%20%E2%80%94%20Press"
+                href="mailto:mesotopos@neomatik.com?subject=Mesotopos%20-%20Press"
                 className="mt-5 inline-block font-display text-3xl text-foreground hover:text-sand transition-colors"
               >
                 mesotopos@neomatik.com

@@ -18,12 +18,12 @@ const EVENTS: Event[] = [];
 export const Route = createFileRoute("/concerts")({
   head: () => ({
     meta: [
-      { title: "Concerts — Mesotopos" },
+      { title: "Concerts | Mesotopos" },
       {
         name: "description",
         content: "Upcoming Mesotopos live dates and rites.",
       },
-      { property: "og:title", content: "Concerts — Mesotopos" },
+      { property: "og:title", content: "Concerts | Mesotopos" },
       { property: "og:description", content: "Where the soundtrack steps out of the studio." },
     ],
   }),
@@ -49,7 +49,7 @@ function ConcertsPage() {
                   Dates announcing soon.
                 </p>
                 <p className="mt-4 text-sm text-muted-foreground max-w-md mx-auto">
-                  Curators, festivals and venues — Mesotopos is open to live
+                  Curators, festivals and venues. Mesotopos is open to live
                   invitations for the coming season.
                 </p>
                 <Link
