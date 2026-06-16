@@ -64,20 +64,6 @@ function HomePage() {
             />
           </Reveal>
 
-          <motion.div
-            initial={{ opacity: 0, scale: 1.04 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1.6, ease: [0.22, 1, 0.36, 1] }}
-            className="relative w-full max-w-[520px]"
-          >
-            <img
-              src={pharaoh.url}
-              alt="Mesotopos figure"
-              className="w-full h-auto select-none pointer-events-none drop-shadow-[0_30px_60px_rgba(0,0,0,0.6)]"
-              width={1500}
-              height={1500}
-            />
-          </motion.div>
 
           <Reveal delay={0.4}>
             <p className="mt-10 font-display italic text-2xl md:text-3xl text-sand max-w-2xl leading-snug">
