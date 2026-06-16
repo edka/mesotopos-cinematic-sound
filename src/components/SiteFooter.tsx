@@ -40,7 +40,7 @@ export function SiteFooter() {
             mesotopos@neomatik.com
           </a>
           <p className="text-xs text-muted-foreground mt-6 leading-relaxed">
-            Ed Kabatsky · neomatik<br />
+            Ed Kabatsky<br />
             Rashid Akmanov<br />
             Oleg Ignatenko
           </p>
