@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { ArrowRight } from "lucide-react";
 
 import pharaoh from "@/assets/pharaoh.png.asset.json";
-import wordmark from "@/assets/wordmark-white.png.asset.json";
+import wordmark from "@/assets/mesotopos-purple-transparent.png.asset.json";
 import mellow from "@/assets/mellow-november.png.asset.json";
 import nightSky from "@/assets/night-sky.jpg";
 import { Reveal } from "@/components/Reveal";
