@@ -24,7 +24,7 @@ const SCENES: Scene[] = [
     cover: mellow.url,
     links: [
       { label: "Spotify", href: "#" },
-      { label: "Apple Music", href: "#" },
+      { label: "Apple Music", href: "https://music.apple.com/us/album/mellow-november-feat-mesotopos-single/6772234080" },
       { label: "Bandcamp", href: "#" },
     ],
   },
