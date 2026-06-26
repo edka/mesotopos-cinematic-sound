@@ -23,9 +23,10 @@ const SCENES: Scene[] = [
       "A slow opening sequence: quiet tension, threshold light, the sense that something larger is about to move.",
     cover: mellow.url,
     links: [
-      { label: "Spotify", href: "#" },
-      { label: "Apple Music", href: "https://music.apple.com/us/album/mellow-november-feat-mesotopos-single/6772234080" },
-      { label: "Bandcamp", href: "#" },
+      { label: "Spotify", href: "https://open.spotify.com/artist/1hA5eFgIgAyLtec5l1RQox" },
+      { label: "Apple Music", href: "https://music.apple.com/us/artist/neomatik/1543651491" },
+      { label: "YouTube", href: "https://www.youtube.com/watch?v=B7a7ovayb0s" },
+      { label: "Bandcamp", href: "https://neomatik.bandcamp.com/track/mellow-november-feat-mesotopos" },
     ],
   },
   {
