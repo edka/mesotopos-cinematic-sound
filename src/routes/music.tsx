@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { PageHeading } from "@/components/PageHeading";
 import { Reveal } from "@/components/Reveal";
 import mellow from "@/assets/mellow-november.png.asset.json";
+import p38Cover from "@/assets/p38-cover.png";
 
 type Scene = {
   number: string;
@@ -33,9 +34,23 @@ const SCENES: Scene[] = [
     number: "02",
     title: "P38",
     date: "July 17",
-    status: "Upcoming",
+    status: "Out now",
     caption:
       "A turn into harder ground. Mechanical pulse against weathered stone, heritage running into the present.",
+    cover: p38Cover,
+    links: [
+      { label: "YouTube Music", href: "https://music.youtube.com/watch?v=Ae9yiWty0iA" },
+      {
+        label: "Apple Music",
+        href: "https://music.apple.com/us/album/p38-feat-mesotopos-single/6776624214",
+      },
+      {
+        label: "iTunes",
+        href: "https://music.apple.com/us/album/p38-feat-mesotopos-single/6776624214",
+      },
+      { label: "Spotify", href: "https://open.spotify.com/album/6ow3vm3BMyWRCPSc8naOA0" },
+      { label: "Bandcamp", href: "https://neomatik.bandcamp.com/track/p38" },
+    ],
   },
   {
     number: "03",
